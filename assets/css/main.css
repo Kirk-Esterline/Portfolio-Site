@@ -1563,6 +1563,12 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			width: 100%;
+			transition: all .25s ease
+		}
+
+		.image.fit:hover {
+			display: block;
+			width: 102%;
 		}
 
 		.image.left {
