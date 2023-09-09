@@ -2307,6 +2307,29 @@ input, select, textarea {
 			box-shadow: inset 0 0 0 1px #d6d6d6;
 		}
 
+
+/* Gallery Pages  */
+/* #### Poor form - but some of this code is being copied from elsewhere in this file #### */
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+	color: #fff;
+}
+
+.gallery-pages {
+	background: linear-gradient(to bottom right, #021802, #60DBCC);
+	color: #fff;
+}
+
+.gallery-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border-bottom: 2px solid #2f394e;
+	background: #0c2d18;
+	height: 65px;
+	padding: 10px 0 10 0;
+}
+
 /* Wide */
 
 	@media screen and (max-width: 1680px) {
