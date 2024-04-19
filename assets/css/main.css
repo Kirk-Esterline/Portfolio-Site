@@ -5,7 +5,23 @@
 	Tessellate by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	Color choices
+
+	Magnolia (light): #ECE8EF
+	Turquoise (middle 1): #60DBCC
+	Viridian (middle 2: middle green): #317A68
+	Oxford Blue (dark 1): #061A40
+	Dark Green (dark 2): #021802 
 */
+
+:root {
+	--main-bg-color: #ece8ef; /*Magnolia*/
+	--accent-lightt: #60dbcc; /*Turquoise*/
+	--accent-dark: #317a68;	/*Viridian*/
+	--accent-text: #061a40; /*oxford blue*/
+	--text-dark: #021802;	/*Dark Green*/
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -87,12 +103,12 @@ input, select, textarea {
 	}
 
 	body {
-		background: #F8F8F8;
+		background: var(--main-bg-color);
 		font-family: 'Roboto', sans-serif;
 		font-weight: 300;
 		font-size: 17pt;
 		line-height: 1.75em;
-		color: #888;
+		/* color: var(--text-dark); */
 		-webkit-text-stroke: 0.1px;
 	}
 
@@ -107,9 +123,13 @@ input, select, textarea {
 			transition: none !important;
 		}
 
-	.dark {
-		color: #aaa;
-		color: rgba(255, 255, 255, 0.65);
+	.dark-text {
+		color: var(--text-dark);
+		color: var(--text-dark);
+	}
+
+	.light-text h1, .light-text h2, .light-text h3, .light-text h4, .light-text p{
+		color: #fff;
 	}
 
 	input, textarea, select {
@@ -121,21 +141,23 @@ input, select, textarea {
 		-webkit-text-stroke: 0.1px;
 	}
 
+
+
 	h1, h2, h3, h4, h5, h6 {
-		color: #666;
+		color: var(--text-dark);
 		margin: 0 0 1em 0;
 		font-weight: 100;
 		line-height: 1.5em;
 	}
 
-	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-		color: inherit;
+	/* h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		color: var(--text-dark);
 		text-decoration: none;
-	}
+	} */
 
-	.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
-		color: #fff;
-	}
+	/* .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+		color: var(--text-dark);
+	} */
 
 	strong, b {
 		font-weight: 400;
@@ -143,8 +165,8 @@ input, select, textarea {
 	}
 
 	.dark strong, .dark b {
-		color: #fff;
-		color: rgba(255, 255, 255, 0.85);
+		color: var(--text-dark);
+		color: var(--text-dark);
 	}
 
 	em, i {
@@ -1563,12 +1585,14 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			width: 100%;
-			transition: all .25s ease
+			transition: all .25s ease;
+			filter: drop-shadow(0 0 0.5em var(--text-dark))
 		}
 
 		.image.fit:hover {
 			display: block;
 			width: 102%;
+			filter: drop-shadow(0 0 0.75em var(--text-dark))
 		}
 
 		.image.left {
@@ -1632,7 +1656,7 @@ input, select, textarea {
 			border: 0;
 			box-shadow: inset 0 0 0 1px #e6e6e6;
 			border-radius: 100%;
-			color: #aaa;
+			color: var(--main-bg-color);
 		}
 
 			ul.icons a:hover {
@@ -2188,7 +2212,7 @@ input, select, textarea {
 	#header {
 		position: relative;
 		margin: 0;
-		background: linear-gradient(to bottom right, #021802, #60DBCC);
+		background: linear-gradient(to bottom right, var(--text-dark), var(--accent-lightt));
 		/* background-image: url("images/overlay.png"), url("../../images/header.jpg"); */
 		background-size: auto, cover;
 		background-position: top left, center center;
@@ -2220,12 +2244,27 @@ input, select, textarea {
 /* Second Section*/
 	
 	#second > .goal {
-		background-color: #f5f5f5;
+		background-color: var(--main-bg-color);
 		/* background-image: url("images/Solid sail_2.svg");
 		background-repeat: no-repeat;
 		background-position-x: 95%;
 		background-size: 27%; */
 	}
+
+	.gallery-list {
+		list-style: none;
+	}
+
+	ul li {
+		margin: 1em 0;
+	}
+
+	ul h4 {
+		font-weight: 500;
+		text-decoration: underline;
+		margin: 0 0 .1em 0;
+	}
+
 
 /* Main Sections */
 
@@ -2270,13 +2309,13 @@ input, select, textarea {
 			}
 
 			.main > .content.style2 {
-				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #384955, #655361, #85505f);
-				/* background: linear-gradient(to bottom right, #60DBCC,); */
+				/* background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #384955, #655361, #85505f); */
+				background: var(--accent-dark);
 			}
 
 			.main > .content.style3 {
-				background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #5f796b, #3a4e59, #2f394e);
-				/* background: #c2c2c2; */
+				/* background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #5f796b, #3a4e59, #2f394e); */
+				background: var(--main-bg-color);
 			}
 
 			.main > .content.style4 {
@@ -2292,12 +2331,13 @@ input, select, textarea {
 		text-align: center;
 		padding: 3em 0 3em 0;
 		box-shadow: inset 0 1px 0 0 #e6e6e6;
+		background-color: var(--accent-dark);
 	}
 
 		#footer .copyright {
 			margin-top: 3em;
 			font-size: 0.8em;
-			color: #aaa;
+			color: var(--accent-lightt);
 		}
 
 			#footer .copyright a {
@@ -2312,20 +2352,20 @@ input, select, textarea {
 /* Gallery Pages  */
 /* #### Poor form - but some of this code is being copied from elsewhere in this file #### */
 
-.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
-	color: #fff;
-}
+/* .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 :not(.header){
+	color: var(--text-dark);
+} */
 
 .gallery-pages {
-	background: linear-gradient(to bottom right, #021802, #60DBCC);
-	color: #fff;
+	background: var(--main-bg-color);
+	color: var(--text-dark);
 }
 
 .gallery-header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	background: #0c2d18;
+	background: var(--accent-dark);
 	height: 65px;
 	padding: .75em 0em 1.5em 0em;
 }
