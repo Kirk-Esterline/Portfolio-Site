@@ -2265,6 +2265,11 @@ input, select, textarea {
 		margin: 0 0 .1em 0;
 	}
 
+/* Third Section */
+
+	.featured img {
+		filter: drop-shadow(0 0.1em 0.1em black);
+	}
 
 /* Main Sections */
 
