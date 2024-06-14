@@ -1,4 +1,4 @@
-h1, h2 {
+h1, h2, h3 {
     text-align: center;
     margin: 25px 0 25px 0;
 }
@@ -6,12 +6,34 @@ h1, h2 {
 div {
     position: relative;
     text-align: center;
+    width: 100%;
+    /* margin: 0 25%; */
 }
 
-p {
-    position: relative;
-    top: -125px;
+.first p {
+    text-align: center;
+    padding: 0 4em;
+}
+
+.second p {
+    position: absolute;
+    width: 100%;
+    top: 225px;
     left: 0%;
     text-align: center;
     font: 2em arial;
+}
+
+article {
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid black;
+}
+
+section {
+    border: 3px solid black;
+}
+
+input {
+    width: 98%;
 }
