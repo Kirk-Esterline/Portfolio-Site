@@ -35,5 +35,6 @@ section {
 }
 
 input {
-    width: 98%;
+    width: 97%;
+    margin-bottom: 1em;
 }

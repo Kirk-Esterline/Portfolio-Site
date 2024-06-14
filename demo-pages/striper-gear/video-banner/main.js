@@ -1,8 +1,7 @@
-let captionText = document.getElementById('enteredCaption').value;
+document.getElementById('viewSample').addEventListener('click', sampleView)
 
-document.getElementById('viewSample').addEventListener('click', viewSample)
-
-function viewSample() {
+function sampleView() {
+    const captionText = document.getElementById('enteredCaption').value;
     console.log(captionText)
     document.getElementById('caption').innerText = captionText
 }
