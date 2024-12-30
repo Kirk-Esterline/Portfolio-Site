@@ -2361,10 +2361,10 @@ input, select, textarea {
 	color: var(--text-dark);
 } */
 
-.gallery-pages {
+/* /* .gallery-pages {
 	background: var(--main-bg-color);
 	color: var(--text-dark);
-}
+} */
 
 .gallery-header {
 	display: flex;
@@ -2375,7 +2375,7 @@ input, select, textarea {
 	padding: .75em 0em 1.5em 0em;
 }
 
-.gallery-pages h1 {
+/* .gallery-pages h1 {
 	text-align: center;
 	font-size: 2em;
 	padding: 1em 0 0 0;
@@ -2390,18 +2390,17 @@ input, select, textarea {
 }
 .gallery-pages p {
 	padding: 0 10em 0 10em;
-	/* border: 3px solid black; */
+	
 }
 
 .gallery-pages ul {
 	padding: .9em 0 0 8.5em;
-	/* border: 3px solid black */
+
 }
 
 .gallery-pages main a {
-	/* border: 3px solid black; */
 	transform: scale(.9);
-}
+} */
 
 /* Wide */
 
