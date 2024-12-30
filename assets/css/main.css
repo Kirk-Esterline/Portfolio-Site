@@ -2355,52 +2355,15 @@ input, select, textarea {
 
 
 /* Gallery Pages  */
-/* #### Poor form - but some of this code is being copied from elsewhere in this file #### */
 
-/* .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 :not(.header){
-	color: var(--text-dark);
-} */
-
-/* /* .gallery-pages {
-	background: var(--main-bg-color);
-	color: var(--text-dark);
-} */
 
 .gallery-header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	background: var(--accent-dark);
-	height: 65px;
 	padding: .75em 0em 1.5em 0em;
 }
-
-/* .gallery-pages h1 {
-	text-align: center;
-	font-size: 2em;
-	padding: 1em 0 0 0;
-}
-
-.gallery-pages main {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: start;
-}
-.gallery-pages p {
-	padding: 0 10em 0 10em;
-	
-}
-
-.gallery-pages ul {
-	padding: .9em 0 0 8.5em;
-
-}
-
-.gallery-pages main a {
-	transform: scale(.9);
-} */
 
 /* Wide */
 
