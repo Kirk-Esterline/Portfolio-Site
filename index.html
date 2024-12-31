@@ -344,7 +344,11 @@
 				<header>
 					<div class="container">
 						<h2>Let Us Build Something Together</h2>
-						<p>We are always interested in hearing about the projects people have in mind.  To talk about your current project or to brainstorm an improvement to an old project, use the form below to send us a message.</p>
+						<p>We are always interested in hearing about the projects people have in mind.  To talk about your current project or to brainstorm an improvement to an existing project, schedule a call or send us an email. </p>
+						<footer>
+							<a href="https://calendly.com/kirk-esterenkodesign/30min" class="button scrolly">Schedule a call</a>
+						</footer>
+
 					</div>
 				</header>
 				<div class="content style4 featured">
@@ -389,6 +393,26 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+		
+		<!-- Calendly badge widget begin -->
+			<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+			<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+			<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/kirk-esterenkodesign/30min', text: 'Schedule a call with me', color: '#0069ff', textColor: '#ffffff' }); }</script>
+		<!-- Calendly badge widget end -->
+		 <!-- center align the badge widget-->
+			<style type="text/css">
+				.calendly-badge-widget { 
+				left: 50% !important; 
+				margin-left: -100px!important; 
+				}
+				.calendly-badge-content {
+					background-color: #317a68 !important;
+				}
+				.calendly-badge-content:hover {
+					width: 102%;
+					filter: drop-shadow(0 0 0.75em var(--text-dark))
+				}
+				</style>
+	<!--end center align the badge widget-->
 	</body>
 </html>
