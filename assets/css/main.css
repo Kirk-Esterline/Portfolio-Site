@@ -2217,7 +2217,7 @@ input, select, textarea {
 		background-size: auto, cover;
 		background-position: top left, center center;
 		background-repeat: repeat, no-repeat;
-		padding: 7em 0 5em 0;
+		padding: 5em 0 5em 0;
 		text-align: center;
 		color: #fff;
 	}
@@ -2229,7 +2229,7 @@ input, select, textarea {
 		}
 
 		#header header h2 {
-			margin-top: 2.25em;
+			margin-top: 1.25em;
 			font-weight: 100;
 			padding: 0;
 			font-size: 1.25em;
